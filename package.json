@@ -1,27 +1,31 @@
 {
-  "name": "next-leaflet-starter",
-  "homepage": "https://next-leaflet-starter.netlify.app",
+  "name": "location-task",
   "version": "0.1.0",
   "license": "MIT",
-  "author": "Colby Fayock <hello@colbyfayock.com>",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "export": "next build && next export",
     "start": "next start"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/colbyfayock/next-leaflet-starter"
-  },
-  "bugs": {
-    "url": "https://github.com/colbyfayock/next-leaflet-starter/issues"
-  },
   "dependencies": {
     "leaflet": "^1.9.2",
     "next": "^13.0.0",
+    "next-redux-wrapper": "^8.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-leaflet": "^4.1.0"
+    "react-leaflet": "^4.1.0",
+    "react-leaflet-location-picker": "^1.4.2",
+    "react-redux": "^8.0.5",
+    "recompose": "^0.30.0",
+    "redux": "^4.2.0",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.4.2",
+    "reselect": "^4.1.7"
+  },
+  "devDependencies": {
+    "@types/node": "18.11.10",
+    "typescript": "4.9.3"
   }
 }
