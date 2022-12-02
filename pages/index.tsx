@@ -13,11 +13,6 @@ const IndexPage: NextComponentType<IndexPageContext> = compose()(Page);
 
 IndexPage.getInitialProps = ({ store, req }) => {
   const isServer: boolean = !!req;
-  // const { location } = store.getState();
-
-  // we can add any custom data here
-  // for examle, the data from api server
-
   return {
     isServer,
   };

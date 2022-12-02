@@ -23,7 +23,7 @@ const Location = (props) => {
               />
               {data.map((item) => {
                 return (
-                  <Marker position={DEFAULT_CENTER}>
+                  <Marker position={[item.value.lat, item.value.lng]}>
                     <Popup>
                       {item.value.name} {item.value.type}
                     </Popup>
@@ -34,7 +34,7 @@ const Location = (props) => {
           )}
         </Map>
       </div>
-
+      <div style={{ marginTop: "10%" }}></div>
       <LocationAdd {...props} />
       <LocationList {...props} />
     </>
